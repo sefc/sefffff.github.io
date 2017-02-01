@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, mimimum-scale=1.0, initial-scale=1.0, user-scalable=yes, shrink-to-fit=no">
+    <meta itemprop="name" content="TCM Logistics San Francisco">
+    <meta name="mobile-web-app-capable" content="yes">    
+    <meta name="description" content="san francisco logistics services provider" />
+    <title>TCM LSI: CBM Calculator - Tailored Logistics Experiences - San Francisco Bay Area</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Caveat|Raleway+Dots" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style type="text/css">
+    a:hover {
+        color: orange;
+    }
+</style>
+<body>
+<!-- sidenav -->
+<nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="links.html">Useful Links</a>
+        <a href="calculator.html">CBM Calculator</a>  
+        <a href="contactus.html">Contact Us</a>
+    </div>
+    <span class="span" style="font-size: 27px; cursor: pointer" onclick="openNav()">&#9776; </span>
+</nav>
+<!-- sidenav ends -->
+<!-- jumbotron -->
+<div class="jumbotron" id="jumbo">
+    <div class="container">
+        <div class="row">
+            <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 class="header"><big>CBM Calculator</big></h2>
+                <!-- calculator -->
+                <!--
+                TERMS OF USE
+                BY USING THE FOLLOWING CODE, YOU AGREED THAT:
+                1. THE MATERIALS ARE PROVIDED "AS IS" AND WITHOUT WARRANTIES OF ANY KIND.
+                2. DO NOT CHANGE ANY OF THE JAVASCRIPT CODE, INCLUDING THE LICENSE TEXT
+                3. YOU CAN CHANGE THE HTML AND CSS TO MAKE THE CALCULATOR FIT INTO THE STYLE OF YOUR SITE.
+                4. DO NOT REMOVE THE TEXT OF "powered by calculator.net"
+                5. COPYRIGHT BELONGS TO calculator.net
+                6. DO NOT REMOVE THIS TERMS OF USE
+                -->
+                <div class="cal">
+                    <form name="calcf">
+                        <!-- table1 -->
+                        <div class="centered">
+                        <table class="centered-table" width="280" border="2" cellspacing="0" cellpadding="4" bgcolor="#dddddd" id="standard">
+                        <tr class="tr">
+                            <td align="center">length</td>
+                            <td align="center">
+                                <input type="text" name="slablength" size="6" id="slablength" value="2.5" style="text-align: right;">
+                            </td>
+                            <td>
+                            <select id="slablengthunit" name="slablengthunit">
+                                <option value="foot" selected>foot</option>
+                                <option value="inch">inch</option>
+                                <option value="yard">yard</option>
+                                <option value="meter">meter</option>
+                                <option value="centimeter">centimeter</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr class="tr">
+                            <td align="center">width</td>
+                            <td align="center">
+                                <input type="text" name="slabwidth" size="6" id="slabwidth" value="5" style="text-align: right;">
+                            </td>
+                            <td>
+                            <select id="slabwidthunit" name="slabwidthunit">
+                                <option value="foot" selected>foot</option>
+                                <option value="inch">inch</option>
+                                <option value="yard">yard</option>
+                                <option value="meter">meter</option>
+                                <option value="centimeter">centimeter</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr class="tr">
+                            <td align="center">thickness or height</td>
+                            <td align="center">
+                                <input type="text" name="slabthick" size="6" id="slabthick" value="5" style="text-align: right;">
+                            </td>
+                            <td>
+                            <select id="slabthickunit" name="slabthickunit">
+                                <option value="foot">foot</option>
+                                <option value="inch" selected>inch</option>
+                                <option value="yard">yard</option>
+                                <option value="meter">meter</option>
+                                <option value="centimeter">centimeter</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr class="tr">
+                            <td align="center">quantity</td>
+                            <td align="center">
+                                <input type="text" name="slabquantity" size="6" id="slabquantity" value="1" style="text-align: right;">
+                            </td>
+                            <td> </td>
+                        </tr>
+                        <!-- table1 end -->
+                        <div class="centered">  
+                        <tr class="tr">
+                            <td> </td>
+                            <td>
+                                <input type="button" value="Calculate" onclick="javascript:calcslab('coutputslab');">
+                            </td>
+                            <td> </td>
+                        </tr>
+                        </table>
+                        <!-- table2 -->
+                        <!-- table3 -->
+                        <div class="centered" id="coutputhole"></div>
+                        <h2></h2>
+                        <table class="centered-table" width="280" border="2" cellspacing="0" cellpadding="4" bgcolor="#dddddd" id="standard">
+                        <tr class="tr">
+                            <td align="center">outer diameter</td>
+                            <td align="center">
+                                <input type="text" name="tubediameter" size="6" id="tubediameter" value="5" style="text-align: right;">
+                            </td>
+                            <td>
+                            <select id="tubediameterunit" name="tubediameterunit">
+                                <option value="foot" selected>foot</option>
+                                <option value="inch">inch</option>
+                                <option value="yard">yard</option>
+                                <option value="meter">meter</option>
+                                <option value="centimeter">centimeter</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr class="tr">
+                            <td align="center">inner diameter</td>
+                            <td align="center">
+                                <input type="text" name="tubeindiameter" size="6" id="tubeindiameter" value="4" style="text-align: right;">
+                            </td>
+                            <td>
+                            <select id="tubeindiameterunit" name="tubeindiameterunit">
+                                <option value="foot" selected>foot</option>
+                                <option value="inch">inch</option>
+                                <option value="yard">yard</option>
+                                <option value="meter">meter</option>
+                                <option value="centimeter">centimeter</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr class="tr">
+                            <td align="center">length or height</td>
+                            <td align="center">
+                                <input type="text" name="tubedepth" size="6" id="tubedepth" value="5" style="text-align: right;">
+                            </td>
+                            <td>
+                            <select id="tubedepthunit" name="tubedepthunit">
+                                <option value="foot">foot</option>
+                                <option value="inch" selected>inch</option>
+                                <option value="yard">yard</option>
+                                <option value="meter">meter</option>
+                                <option value="centimeter">centimeter</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr class="tr">
+                            <td align="center">quantity</td>
+                            <td align="center">
+                            <input type="text" name="tubequantity" size="6" id="tubequantity" value="1" style="text-align: right;">
+                            </td>
+                            <td> </td>
+                        </tr>
+                        <tr class="tr">
+                            <td> </td>
+                            <td>
+                                <input type="button" value="Calculate" onclick="javascript:calctube('coutputtube');">
+                            </td>
+                            <td> </td>
+                        </tr>
+                        </table>
+                        <!-- table3 end -->
+                        <div id="coutputtube"></div>
+                        <br>
+                        <div id="calfootnote">powered by <a href="http://www.calculator.net" target="_blank">calculator.net</a></div>
+                    </form>
+                </div>
+            </div>
+         </section>   
+    </div>
+</div>
+<!-- calculator end -->
+</section></div>
+<!-- footer -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-7 col-md-8">
+                <h5 class="white-text">░░ This is TCM</h5>
+                    <p class="grey-text text-lighten-4">We want to thank you for being patient. This site is still under construction. Feel free to give us feedback!</p>
+                    <a href="https://www.facebook.com/TCM-Logistic-Inc-578444908981947/?hc_ref=PAGES_TIMELINE&fref=nf" target="_blank"><img class="glyphicon" src="img/facebook.png" alt="facebook"></a>
+                    <a href=""><img class="glyphicon" src="img/twitter.png" alt="twitter"></a>
+                    <a href="mailto:info@tcmlogistic.com"><img class="glyphicon" src="img/e-mail-envelope.png" alt="email"></a>
+            </div>
+            <div class="col-xs-6 col-sm-5 col-md-4">
+                <h5 class="white-text">░░ Look Over Here!</h5>
+                    <ul>
+                        <li><a class="footer-li" href="#">🀅 Need Assistance?</a></li>
+                        <li><a class="footer-li" href="#">🀅 Leave a comment</a></li>
+                        <li><a class="footer-li" href="links.html">🀅 Useful Links</a></li>
+                        <li><a class="footer-li" href="#">🀅 Get a Quote</a></li>
+                        <li><a class="footer-li" href="mailto:info@tcmlogistic.com">🀅 E-mail Us ✉ </a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2014 Copyright TCM LSI   
+        </div>
+    </div>
+</footer>
+</section>
+<script src="js/calculator.js"></script>
+<script src="js/jquery-3.1.1.slim.min.js"></script>    
+<script src="js/bootstrap.min.js"></script>    
+</body>
+</html>

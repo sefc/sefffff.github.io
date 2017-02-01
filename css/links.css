@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../img/links.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.header {
+  padding: 1.5em 0 1.3em 0;
+  text-align: center;
+  font-family: 'Bungee Shade';
+  color: #E1E0E4;
+  text-shadow: 1px 1px #716E7B;
+}
+
+#jumbo {
+  background: rgb(200, 54, 54);
+  background: rgba(39, 40, 44, 0.8);
+  color: white;
+}
+
+.links {
+  color: white;
+  text-align: rtl;
+  font-size: 20px;
+  font-family: 'Raleway Dots';
+  font-weight: bold;
+  padding: .1em .1em .6em .3em;
+  text-align: center;
+}
+
+.li {
+  list-style: none;
+}
+
+/* footer */
+.page-footer {
+  font-family: 'Raleway Dots';
+  color: #ededed;
+  background-color: #6E6D6C;
+  padding: 3em 1em 6em 1em;
+}
+
+.footer-li {
+  font-family: 'Raleway Dots';
+  color: #ededed;
+}
+
+ul {
+  list-style: none;
+}
+
+.glyphicon {
+    margin: 1em auto;
+    position: fixed;
+    opacity: .2;
+}
+
+/* sidenav */
+.span {
+  padding: .3em;
+  color: #ededed;
+  position: fixed;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #908E8D;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sidenav a {
+    padding: 28px 8px 8px 18px;
+    text-decoration: none;
+  font-family: 'Raleway Dots';
+  font-weight: bold;    
+    font-size: 20px;
+    text-align: center;
+    color: #ededed;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.dropdown {
+  list-style: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* sidenav ends*/

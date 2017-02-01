@@ -1,0 +1,110 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: arial;
+	font-size: 18px;
+}
+
+li {
+	list-style: none;
+	line-height: 2em;
+	text-align: left;
+}
+
+.header {
+	background: #
+	border-bottom: #ccc 3px solid;
+	padding: 20px;
+}
+
+.container {
+	max-width: 700px;
+	margin: 30px auto;
+	padding-top: 1.9em;
+}
+
+.form {
+    color: gray;
+    text-align: center;
+}
+
+#heading {
+	color: #ededed;
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
+}
+
+.jumbotron {
+	background-color: #ededed;
+	background: url('../feedbackform/feedbackform.jpg') center center fixed;
+	background-size: 100% 100%;
+}
+
+#jumbo {
+    padding-bottom: 5em;
+}
+
+.page-footer {
+    padding: .1em;
+    background: #ededed;
+    color: gray;
+}
+
+.glyphicon {
+    margin: 1em auto;
+    position: fixed;
+}
+
+
+/* sidenav */
+.span {
+	text-align: left;
+	padding-top: 1em;
+    padding-left: .5em;
+	color: gray;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgb(200, 54, 54);
+	background: rgba(39, 40, 44, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sidenav a {
+    padding: 28px 8px 8px 18px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ededed;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* sidenav end*/
