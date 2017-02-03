@@ -43,7 +43,7 @@ main {
 .service_desc {
   color: white;
   font-size: 23px;
-  font-family: 'Raleway Dots';  
+  font-family: 'Pavanam';  
   font-weight: bold;
   text-align: center;
   padding: .1em .1em .6em .3em;
@@ -51,14 +51,14 @@ main {
 
 /* footer */
 .page-footer {
-  font-family: 'Raleway Dots';
+  font-family: 'Pavanam';
   color: #ededed;
   background-color: #6E6D6C;
   padding: 3em 1em 6em 1em;
 }
 
 .footer-li {
-  font-family: 'Raleway Dots';
+  font-family: 'Pavanam';
   color: #ededed;
 }
 
@@ -95,7 +95,7 @@ ul {
 .sidenav a {
     padding: 28px 8px 8px 18px;
     text-decoration: none;
-  font-family: 'Raleway Dots';
+  font-family: 'Pavanam';
   font-weight: bold;    
     font-size: 20px;
     text-align: center;
